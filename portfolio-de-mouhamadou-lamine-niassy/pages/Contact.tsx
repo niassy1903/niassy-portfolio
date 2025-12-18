@@ -99,12 +99,12 @@ export const Contact: React.FC = () => {
               <form className="space-y-8" onSubmit={handleSubmit}>
                 <div className="space-y-3">
                   <label className="text-[9px] font-black text-slate-400 ml-5 uppercase tracking-widest">Votre Nom</label>
-                  <input required type="text" placeholder="Ex: Jean Dupont" className="w-full px-8 py-5 bg-white border-2 border-transparent focus:border-[#0066FF] rounded-3xl outline-none transition-all font-bold text-slate-900 shadow-sm" />
+                  <input required type="text" placeholder="Ex: niassy lamine" className="w-full px-8 py-5 bg-white border-2 border-transparent focus:border-[#0066FF] rounded-3xl outline-none transition-all font-bold text-slate-900 shadow-sm" />
                 </div>
                 
                 <div className="space-y-3">
                   <label className="text-[9px] font-black text-slate-400 ml-5 uppercase tracking-widest">Votre Email</label>
-                  <input required type="email" placeholder="jean@exemple.com" className="w-full px-8 py-5 bg-white border-2 border-transparent focus:border-[#0066FF] rounded-3xl outline-none transition-all font-bold text-slate-900 shadow-sm" />
+                  <input required type="email" placeholder="nom@exemple.com" className="w-full px-8 py-5 bg-white border-2 border-transparent focus:border-[#0066FF] rounded-3xl outline-none transition-all font-bold text-slate-900 shadow-sm" />
                 </div>
                 
                 <div className="space-y-3">
