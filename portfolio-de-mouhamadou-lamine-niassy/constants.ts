@@ -86,7 +86,7 @@ export const EDUCATION: EducationItem[] = [
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
-    title: "Développeur Web & IoT (Stage)",
+    title: "Développeur Web & IoT",
     company: "SOLID AFRIQUE (SOLID SA)",
     period: "2025",
     description: [
