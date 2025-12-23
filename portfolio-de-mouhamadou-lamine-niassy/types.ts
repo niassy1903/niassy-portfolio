@@ -1,12 +1,13 @@
-
 export interface Project {
   id: number;
   title: string;
   description: string;
-  image: string;
+  image?: string;
+  tags?: string[];
+  link?: string; // ajouté
   github?: string;
   demo?: string;
-  tags: string[];
+  githubPrivate?: boolean;
 }
 
 export interface SkillCategory {

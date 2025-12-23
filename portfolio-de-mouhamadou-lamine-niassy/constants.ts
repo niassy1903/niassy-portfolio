@@ -114,43 +114,54 @@ export const PROJECTS: Project[] = [
     title: "Yayou Baye Niass E-commerce",
     description: "Plateforme e-commerce complexe avec gestion de panier, paiements sécurisés et dashboard administrateur dynamique sur MongoDB Atlas.",
     image: "/assets/yayoub.jpeg",
-    tags: ["React JS", "Node.js", "MongoDB Atlas"]
+    tags: ["React JS", "Node.js", "MongoDB Atlas"],
+    github: "https://yayou-baye-niass.netlify.app/",
+    demo: "https://yayou-baye-niass.netlify.app/",
+    githubPrivate: false
   },
   {
     id: 2,
     title: "DjamonoPay",
     description: "Plateforme bancaire complète intégrant la gestion de comptes, transactions sécurisées et reporting financier précis.",
     image: "/assets/jamano.png",
-    tags: ["Laravel", "Fintech", "MySQL"]
+    tags: ["Laravel", "Fintech", "MySQL"],
+    github: "https://github.com/ndiawar/DjamonoPay.git",
+    githubPrivate: false
   },
   {
     id: 3,
     title: "IoT Safe Traffic",
     description: "Dispositif intelligent de gestion du trafic routier avec détection d'infractions et alertes en temps réel.",
     image: "/assets/logo.png",
-    tags: ["React", "IoT", "Node.js","Laravel","Raspberry Pi"]
+    tags: ["React", "IoT", "Node.js", "Laravel", "Raspberry Pi"],
+    github: "https://github.com/niassy1903/karangue_trafic.git",
+    githubPrivate: false
   },
   {
     id: 4,
     title: "Smart School Management System",
     description: "Système de gestion académique centralisé automatisant les inscriptions, les notes et le suivi des parents.",
     image: "/assets/school.jpeg",
-    tags: ["PHP", "MySQL", "Dashboard"]
+    tags: ["PHP", "MySQL", "Dashboard"],
+    github: "https://github.com/KingOuze/gestion-ecole.git",
+    githubPrivate: false
   },
-
   {
     id: 5,
     title: "Arrosage Intelligent IoT",
     description: "Système d'arrosage automatisé basé sur les données environnementales pour une agriculture durable.",
     image: "/assets/smart-home.png",
-    tags: ["IoT", "Laravel", "Angular","Raspberry Pi","MongoDB"]
+    tags: ["IoT", "Laravel", "Angular", "Raspberry Pi", "MongoDB"],
+    github: "https://github.com/niassy1903/SUNU_ARROSAGE.git",
+    githubPrivate: false
   },
-
   {
     id: 6,
     title: "Système de Gestion Temperature Magasin",
     description: "Plateforme de monitoring de la température en temps réel pour la conservation des produits sensibles.",
     image: "/assets/temperature.jpeg",
-    tags: ["Angular", "Node.js", "MongoDB"]
+    tags: ["Angular", "Node.js", "MongoDB"],
+    github: "https://github.com/khadimethiam/2em_test_yakar.git",
+    githubPrivate: false
   }
 ];
