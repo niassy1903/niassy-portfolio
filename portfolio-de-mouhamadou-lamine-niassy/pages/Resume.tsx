@@ -147,7 +147,7 @@ export const Resume: React.FC = () => {
 
         <div className="mt-20 flex justify-center">
           <a 
-            href="https://drive.google.com/file/d/1LDZ0ncVYOyRfj4l4ezTZZNJ1nNsYAQx3/view?usp=sharing"
+            href="https://drive.google.com/file/d/1VL5_uLV-E0_7cwjUvKBYnLQZao1FZJ65/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-10 py-4 bg-slate-900 text-white rounded-full font-black text-sm hover:bg-[#149ddd] transition-all shadow-xl hover:scale-105 active:scale-95"
