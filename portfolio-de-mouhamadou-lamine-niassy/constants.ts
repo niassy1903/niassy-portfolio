@@ -175,5 +175,15 @@ export const PROJECTS: Project[] = [
     github: "https://minipos-2idd.onrender.com/",
     demo: "https://minipos-2idd.onrender.com/",
     githubPrivate: false
+  },
+  {
+    id: 8,
+    title: "NiassyTontine",
+    description: "Gestion des tontines dahira, associations des jeunes, GIE et autres",
+    image: "/assets/niassy-tontine.png",
+    tags: ["Node.js", "React", "MongoDB"],
+    github: "https://niassy-tontine.onrender.com/",
+    demo: "https://niassy-tontine.onrender.com/",
+    githubPrivate: false
   }
 ];
