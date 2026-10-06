@@ -45,7 +45,7 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="mb-8 px-6 py-2 bg-blue-50/50 backdrop-blur-md border border-blue-100 text-[#0066FF] rounded-full text-[10px] font-black uppercase tracking-[0.4em] flex items-center gap-2"
           >
-            <Sparkles size={14} /> Ouvert à de nouveaux défis
+            Ouvert à de nouveaux défis
           </motion.div>
 
           <motion.h1 
