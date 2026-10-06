@@ -125,7 +125,8 @@ export const PROJECTS: Project[] = [
     description: "Plateforme bancaire complète intégrant la gestion de comptes, transactions sécurisées et reporting financier précis.",
     image: "/assets/jamano.png",
     tags: ["Laravel", "Fintech", "MySQL"],
-    github: "https://github.com/ndiawar/DjamonoPay.git",
+    github: "https://djamonopay.onrender.com/",
+    demo: "https://djamonopay.onrender.com/",
     githubPrivate: false
   },
   {
@@ -134,7 +135,8 @@ export const PROJECTS: Project[] = [
     description: "Dispositif intelligent de gestion du trafic routier avec détection d'infractions et alertes en temps réel.",
     image: "/assets/logo.png",
     tags: ["React", "IoT", "Node.js", "Laravel", "Raspberry Pi"],
-    github: "https://github.com/niassy1903/karangue_trafic.git",
+    github: "https://karangue-trafic.netlify.app/",
+    demo: "https://karangue-trafic.netlify.app/",
     githubPrivate: false
   },
   {
@@ -162,6 +164,16 @@ export const PROJECTS: Project[] = [
     image: "/assets/temperature.jpeg",
     tags: ["Angular", "Node.js", "MongoDB"],
     github: "https://github.com/khadimethiam/2em_test_yakar.git",
+    githubPrivate: false
+  },
+  {
+    id: 7,
+    title: "Minipos",
+    description: "Gestion d'une boutique vente produit stockes",
+    image: "/assets/minipos.png",
+    tags: ["Node.js", "React", "MongoDB"],
+    github: "https://minipos-2idd.onrender.com/",
+    demo: "https://minipos-2idd.onrender.com/",
     githubPrivate: false
   }
 ];
