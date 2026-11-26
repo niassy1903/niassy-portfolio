@@ -169,7 +169,7 @@ const App: React.FC = () => {
 
           <div className="flex flex-col md:flex-row justify-between items-center pt-16 border-t border-slate-50 gap-8">
             <div className="flex items-center gap-4">
-               <div className="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center text-white font-black text-sm">N</div>
+               <div className="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center text-white font-black text-sm">MLN</div>
                <span className="text-slate-400 text-[10px] font-black uppercase tracking-[0.4em]">Mouhamadou Lamine Niassy • © {new Date().getFullYear()}</span>
             </div>
             
