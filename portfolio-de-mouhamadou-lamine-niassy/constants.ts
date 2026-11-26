@@ -204,5 +204,15 @@ export const PROJECTS: Project[] = [
     github: "https://niassy-tontine.onrender.com/",
     demo: "https://niassy-tontine.onrender.com/",
     githubPrivate: false
+  },
+  {
+    id: 9,
+    title: "Cotiz",
+    description: "Application web progressive pour la gestion transparente et sécurisée des membres, cotisations, paiements et dépenses des dahiras, tontines et associations. Construite avec React 19, TypeScript, Vite et Tailwind CSS 4, elle est connectée à une API Laravel 13.",
+    image: "/assets/cotiz.png",
+    tags: ["React 19", "TypeScript", "Vite", "Tailwind CSS 4", "Laravel 13"],
+    github: "https://cotiz-one.vercel.app/",
+    demo: "https://cotiz-one.vercel.app/",
+    githubPrivate: false
   }
 ];
