@@ -3,8 +3,8 @@ import { Project, SkillCategory, ExperienceItem, EducationItem, Service } from '
 
 export const PERSONAL_INFO = {
   name: "Mouhamadou Lamine Niassy",
-  title: "Développeur Fullstack | Spécialiste IoT",
-  bio: "Architecte de solutions numériques, je fusionne le développement web de pointe et l'intelligence des objets connectés. Mon approche repose sur la performance, l'évolutivité et une expérience utilisateur sans compromis.",
+  title: "Développeur Fullstack | Réseaux, vidéosurveillance & IoT",
+  bio: "Développeur fullstack et technicien réseaux, télécoms et vidéosurveillance. Je conçois des applications web et mobiles, et j’interviens sur les systèmes connectés, les infrastructures réseau et l’installation ou le dépannage de caméras.",
   phone: "+221 70 461 1894",
   email: "niassy.lamine10@gmail.com",
   address: "Keur Massar, Cité Ainoumady, Dakar, Sénégal",
@@ -20,26 +20,26 @@ export const PERSONAL_INFO = {
 
 export const SERVICES: Service[] = [
   {
-    title: "Développement Web",
-    description: "Conception d'écosystèmes web robustes avec React, Angular et Laravel, focalisés sur la conversion et la vitesse.",
+    title: "Développement Web & Mobile",
+    description: "Applications web fullstack avec React, Angular, Laravel et Node.js, ainsi que des applications mobiles multiplateformes avec Flutter.",
     icon: "Layout",
     color: "bg-blue-600"
   },
   {
-    title: "Ingénierie IoT",
-    description: "Développement de systèmes embarqués intelligents et connectés, du capteur au tableau de bord cloud.",
+    title: "Réseaux & systèmes",
+    description: "Configuration de routeurs, commutateurs et serveurs, résolution de problèmes réseau et mise en place de services DNS, DHCP et Proxy.",
     icon: "Cpu",
     color: "bg-indigo-600"
   },
   {
-    title: "Infrastructure Réseau",
-    description: "Optimisation et sécurisation de parcs informatiques pour une haute disponibilité et une sécurité maximale.",
+    title: "Vidéosurveillance",
+    description: "Installation, configuration, entretien et dépannage de caméras de surveillance, avec intervention sur site chez les clients.",
     icon: "Globe",
     color: "bg-emerald-600"
   },
   {
-    title: "Design de Marque",
-    description: "Création d'interfaces (UI) et d'expériences (UX) mémorables qui captivent et retiennent vos utilisateurs.",
+    title: "IoT & systèmes connectés",
+    description: "Prototypes et systèmes connectés autour d’ESP32, Arduino, Raspberry Pi et MQTT, avec capteurs et tableaux de bord temps réel.",
     icon: "Smartphone",
     color: "bg-rose-600"
   }
@@ -47,35 +47,44 @@ export const SERVICES: Service[] = [
 
 export const SKILLS: SkillCategory[] = [
   {
-    title: "Frontend & Mobile",
-    skills: ["React", "Angular", "Ionic", "JavaScript/TS", "Tailwind CSS", "Bootstrap"]
+    title: "Frontend & mobile",
+    skills: ["HTML", "CSS", "JavaScript", "React JS", "Angular", "Flutter"]
   },
   {
-    title: "Backend & Cloud",
-    skills: ["Node.js", "Laravel (PHP)", "Java", "Python", "MySQL", "MongoDB Atlas", "Docker"]
+    title: "Backend & bases de données",
+    skills: ["PHP / Laravel", "Node.js / Express.js", "MySQL", "PostgreSQL", "MongoDB"]
   },
   {
-    title: "IoT & Systèmes",
-    skills: ["Arduino", "Raspberry Pi", "Automatisme Siemens", "MQTT", "Protocoles Réseaux"]
+    title: "Réseaux & systèmes",
+    skills: ["TCP/IP", "DNS", "DHCP", "Proxy", "Routage", "Routeurs & commutateurs", "VPN", "Windows Server", "Active Directory", "Ubuntu Server"]
   },
   {
-    title: "Outils & Méthodes",
-    skills: ["Git/GitHub", "Figma", "Méthodes Agiles", "CI/CD", "Trello"]
+    title: "Télécoms & sécurité réseau",
+    skills: ["VoIP", "Asterisk", "Audit de sécurité", "Kali Linux", "Cryptage réseau"]
+  },
+  {
+    title: "IoT, déploiement & outils",
+    skills: ["ESP32", "Arduino", "Raspberry Pi", "Capteurs", "MQTT", "Docker", "Vercel", "Netlify", "Render", "Git / GitHub", "Trello", "Figma", "Canva"]
   }
 ];
 
 export const EDUCATION: EducationItem[] = [
   {
-    degree: "Expertise Fullstack & IoT",
+    degree: "Certificat professionnel de spécialisation en développement web fullstack et IoT",
     institution: "SIMPLON SENEGAL",
     year: "2024 - 2025",
-    description: "Spécialisation avancée en développement d'applications connectées et scalables."
+    description: "Formation professionnelle en développement fullstack et conception de solutions connectées."
   },
   {
     degree: "Licence Systèmes Réseaux & Télécoms",
     institution: "Université Alioune Diop de Bambey",
     year: "2020 - 2023",
-    description: "Ingénierie des réseaux et télécommunications modernes."
+    description: "Travaux pratiques en DNS, DHCP, Proxy, serveurs Windows et Ubuntu, VoIP avec Asterisk, sécurité réseau, routeurs et commutateurs."
+  },
+  {
+    degree: "Certifications en développement web et design",
+    institution: "SIMPLON SENEGAL",
+    year: "2019 - 2020"
   },
   {
     degree: "Baccalauréat Scientifique (S2)",
@@ -86,24 +95,34 @@ export const EDUCATION: EducationItem[] = [
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
-    title: "Développeur Web & IoT",
-    company: "SOLID AFRIQUE (SOLID SA)",
-    period: "2025",
+    title: "Technicien réseaux, vidéosurveillance & IoT · Missions",
+    company: "ESP — Efficace Sécurité Pro",
+    period: "2025 - Aujourd’hui",
     description: [
-      "Architecture d'applications web scalables.",
-      "Implémentation de modules d'IA décisionnelle.",
-      "Optimisation des flux de données IoT haute fréquence."
+      "Installation, configuration et entretien préventif de caméras de surveillance.",
+      "Dépannage et remise en service des installations chez les clients.",
+      "Interventions sur chantier et maintenance des équipements."
     ]
   },
   {
-    title: "Concepteur de Solutions Digitales",
-    company: "Projets Indépendants",
-    period: "2024 - Présent",
+    title: "Stagiaire en développement web & IoT",
+    company: "SOLID AFRIQUE (SOLID SA)",
+    period: "Avril 2025 - Juillet 2025",
     description: [
-      "Création de plateformes Fintech (DjamonoPay).",
-      "Développement de GAB virtuels et systèmes bancaires.",
-      "Systèmes de monitoring temps réel pour l'industrie.",
-      "Création de plateformes e-commerce complètes.",
+      "Développement et maintenance d’applications web.",
+      "Intégration de fonctionnalités d’intelligence artificielle.",
+      "Collaboration avec l’équipe et documentation des travaux."
+    ]
+  },
+  {
+    title: "Projets fullstack & IoT",
+    company: "SIMPLON SENEGAL",
+    period: "2024 - 2025",
+    description: [
+      "Application GAB en C et application bancaire DjamonoPay avec Laravel et MySQL.",
+      "Application de gestion d’école en PHP et MySQL.",
+      "Système de pointage avec Angular, Laravel, Node.js, MongoDB et MySQL.",
+      "Arrosage automatique connecté : ESP32, MQTT, capteurs et tableau de bord temps réel."
     ]
   }
 ];

@@ -2,14 +2,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { PERSONAL_INFO } from '../constants';
-import { Target, Zap, Shield, Cpu } from 'lucide-react';
+import { Target, Zap, Shield, Cpu, Quote } from 'lucide-react';
 
 export const About: React.FC = () => {
   const stats = [
-    { label: "Projets", val: "15+", icon: <Zap className="text-yellow-500" /> },
-    { label: "Expérience", val: "3 ans", icon: <Target className="text-red-500" /> },
-    { label: "Dispo", val: "100%", icon: <Shield className="text-green-500" /> },
-    { label: "IoT Focus", val: "High", icon: <Cpu className="text-blue-500" /> },
+    { label: "Projets", val: "8+", icon: <Zap className="text-yellow-500" /> },
+    { label: "Domaines", val: "3 axes", icon: <Target className="text-blue-700" /> },
+    { label: "Missions terrain", val: "2025+", icon: <Shield className="text-green-600" /> },
+    { label: "Systèmes", val: "IoT", icon: <Cpu className="text-blue-500" /> },
   ];
 
   return (
@@ -24,16 +24,16 @@ export const About: React.FC = () => {
             viewport={{ once: true }}
             className="lg:col-span-7 bento-card p-12 rounded-[40px]"
           >
-            <span className="text-[#0066FF] font-black uppercase tracking-[0.3em] text-[10px] mb-6 block">Mon ADN</span>
+            <span className="text-[#1557c0] font-black uppercase tracking-[0.3em] text-[10px] mb-6 block">Mon ADN</span>
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-8 tracking-tighter">
-              Bâtir des ponts entre le <span className="italic font-light">code</span> et la <span className="text-[#0066FF]">réalité physique.</span>
+              Bâtir des ponts entre le <span className="italic font-light">code</span> et la <span className="text-[#1557c0]">réalité physique.</span>
             </h2>
             <p className="text-xl text-slate-500 font-light leading-relaxed mb-8">
-              Expert en convergence technologique, je transforme des problématiques complexes en solutions numériques fluides, de la puce électronique à l'interface utilisateur.
+              {PERSONAL_INFO.bio}
             </p>
             <div className="flex gap-4">
-              <div className="w-12 h-1 bg-[#0066FF] rounded-full"></div>
-              <p className="text-sm font-bold text-slate-400 italic">"L'innovation est mon carburant quotidien."</p>
+              <div className="w-12 h-1 bg-[#1557c0] rounded-full"></div>
+              <p className="text-sm font-bold text-slate-500 italic">Curiosité, rigueur et impact concret.</p>
             </div>
           </motion.div>
 
@@ -50,8 +50,22 @@ export const About: React.FC = () => {
               loading="lazy"
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0066FF]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1557c0]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
           </motion.div>
+
+          <motion.figure
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="lg:col-span-12 relative overflow-hidden rounded-[32px] bg-[#102f69] px-8 py-10 text-white md:px-14 md:py-12"
+          >
+            <Quote aria-hidden="true" className="absolute -right-3 -top-4 h-32 w-32 rotate-12 text-white/5" />
+            <div className="relative max-w-4xl">
+              <Quote aria-hidden="true" size={24} className="mb-5 text-[#f2c969]" />
+              <blockquote className="text-2xl font-semibold leading-relaxed tracking-tight md:text-3xl">« {PERSONAL_INFO.quote} »</blockquote>
+              <figcaption className="mt-6 text-[10px] font-extrabold uppercase tracking-[.25em] text-blue-200">Ma vision du numérique · {PERSONAL_INFO.name}</figcaption>
+            </div>
+          </motion.figure>
 
           {/* Stats Bento Grid */}
           <div className="lg:col-span-12 grid grid-cols-2 md:grid-cols-4 gap-8 mt-4">

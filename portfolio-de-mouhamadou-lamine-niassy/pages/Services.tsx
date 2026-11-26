@@ -1,25 +1,26 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Layout, Cpu, Globe, Smartphone } from 'lucide-react';
+import { Layout, Cpu, Network, Camera } from 'lucide-react';
 import { SERVICES } from '../constants';
 
 export const Services: React.FC = () => {
-  const icons = [<Layout />, <Cpu />, <Globe />, <Smartphone />];
+  const icons = [<Layout />, <Network />, <Camera />, <Cpu />];
 
   return (
-    <section id="services" className="py-32 px-6 bg-white">
+    <section id="services" className="py-32 px-6 bg-white scroll-mt-20">
       <div className="container mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-12 gap-16">
           <div className="lg:col-span-4">
-            <h2 className="text-4xl font-light text-blue-950 mb-6 tracking-tight">Services <br /><span className="font-bold italic">& Expertise</span></h2>
+            <span className="mb-5 block text-[10px] font-black uppercase tracking-[.3em] text-blue-700">Du code au terrain</span>
+            <h2 className="text-4xl font-light text-blue-950 mb-6 tracking-tight">Mes domaines <br /><span className="font-bold italic">d’intervention.</span></h2>
             <p className="text-slate-500 font-light leading-relaxed mb-8">
-              Chaque projet est une opportunité d'innover et de créer une valeur ajoutée durable.
+              Développement, infrastructures et systèmes connectés : un profil polyvalent, de l’interface aux équipements sur site.
             </p>
-            <div className="flex items-center gap-4 group cursor-pointer">
+            <a href="#resume" className="flex items-center gap-4 group">
               <span className="w-10 h-[1px] bg-blue-600 group-hover:w-16 transition-all" />
-              <span className="text-xs font-bold uppercase tracking-widest text-blue-600">Voir mon CV</span>
-            </div>
+              <span className="text-xs font-bold uppercase tracking-widest text-blue-600">Voir le parcours</span>
+            </a>
           </div>
 
           <div className="lg:col-span-8 grid md:grid-cols-2 gap-8">

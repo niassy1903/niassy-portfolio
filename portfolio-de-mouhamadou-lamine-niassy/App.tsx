@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowUp, Github, Linkedin, Instagram, Twitter } from 'lucide-react';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
+import { Services } from './pages/Services';
 import { Resume } from './pages/Resume';
 import { Portfolio } from './pages/Portfolio';
 import { Contact } from './pages/Contact';
@@ -17,7 +18,8 @@ const App: React.FC = () => {
   const navItems = [
     { id: 'hero', label: 'Accueil' },
     { id: 'about', label: 'Parcours' },
-    { id: 'resume', label: 'Expertise' },
+    { id: 'services', label: 'Expertises' },
+    { id: 'resume', label: 'CV' },
     { id: 'portfolio', label: 'Projets' },
     { id: 'contact', label: 'Contact' },
   ];
@@ -57,7 +59,7 @@ const App: React.FC = () => {
       <nav className={`fixed top-0 left-0 right-0 z-[1000] transition-all duration-500 ${scrolled ? 'glass-nav py-3 shadow-sm' : 'bg-transparent py-8'}`}>
         <div className="container mx-auto px-8 flex justify-between items-center">
           <a href="#hero" onClick={(e) => scrollToSection(e, 'hero')} className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-[#0066FF] rounded-xl flex items-center justify-center text-white font-black text-xl group-hover:rotate-12 transition-transform">M.L</div>
+            <div className="w-10 h-10 bg-[#1557c0] rounded-xl flex items-center justify-center text-white font-black text-xl group-hover:rotate-12 transition-transform">M.L</div>
             <span className="text-slate-900 font-black tracking-tighter text-xl">NIASSY</span>
           </a>
 
@@ -68,19 +70,19 @@ const App: React.FC = () => {
                 href={`#${item.id}`}
                 onClick={(e) => scrollToSection(e, item.id)}
                 className={`text-[10px] font-black uppercase tracking-[0.2em] transition-all relative ${
-                  activeSection === item.id ? 'text-[#0066FF]' : 'text-slate-400 hover:text-slate-900'
+                  activeSection === item.id ? 'text-[#1557c0]' : 'text-slate-400 hover:text-slate-900'
                 }`}
               >
                 {item.label}
                 {activeSection === item.id && (
-                  <motion.div layoutId="navDot" className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-[#0066FF] rounded-full" />
+                  <motion.div layoutId="navDot" className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-[#1557c0] rounded-full" />
                 )}
               </a>
             ))}
             <a 
               href="#contact" 
               onClick={(e) => scrollToSection(e, 'contact')}
-              className="bg-slate-900 text-white px-8 py-3 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] hover:bg-[#0066FF] transition-all shadow-xl shadow-slate-200"
+              className="bg-slate-900 text-white px-8 py-3 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] hover:bg-[#1557c0] transition-all shadow-xl shadow-slate-200"
             >
               Lancer un projet
             </a>
@@ -101,7 +103,7 @@ const App: React.FC = () => {
           >
             <div className="flex flex-col gap-8 text-center">
               {navItems.map((item) => (
-                <a key={item.id} href={`#${item.id}`} onClick={(e) => scrollToSection(e, item.id)} className="text-4xl font-black text-slate-900 hover:text-[#0066FF] transition-colors uppercase tracking-tighter">{item.label}</a>
+                <a key={item.id} href={`#${item.id}`} onClick={(e) => scrollToSection(e, item.id)} className="text-4xl font-black text-slate-900 hover:text-[#1557c0] transition-colors uppercase tracking-tighter">{item.label}</a>
               ))}
             </div>
             <div className="mt-16 flex gap-8">
@@ -115,6 +117,7 @@ const App: React.FC = () => {
       <main>
         <Home />
         <About />
+        <Services />
         <Resume />
         <Portfolio />
         <Contact />
@@ -127,7 +130,7 @@ const App: React.FC = () => {
             
             <div className="lg:col-span-6">
               <h2 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter leading-[0.9] mb-8">
-                Prêt à construire <br />le <span className="text-[#0066FF]">futur ?</span>
+                Prêt à construire <br />le <span className="text-[#1557c0]">futur ?</span>
               </h2>
               <p className="text-xl text-slate-500 font-light max-w-md leading-relaxed">
                 Fusionnons votre vision et mon expertise pour créer des expériences digitales hors du commun.
@@ -139,7 +142,7 @@ const App: React.FC = () => {
               <ul className="space-y-4">
                 {navItems.map(item => (
                   <li key={item.id}>
-                    <a href={`#${item.id}`} onClick={(e) => scrollToSection(e, item.id)} className="text-slate-900 font-bold hover:text-[#0066FF] transition-colors">{item.label}</a>
+                    <a href={`#${item.id}`} onClick={(e) => scrollToSection(e, item.id)} className="text-slate-900 font-bold hover:text-[#1557c0] transition-colors">{item.label}</a>
                   </li>
                 ))}
               </ul>
@@ -148,16 +151,16 @@ const App: React.FC = () => {
             <div className="lg:col-span-3">
               <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-8">Réseaux</h4>
               <div className="flex flex-col gap-4">
-                <a href={PERSONAL_INFO.socials.linkedin} className="group flex items-center gap-3 text-slate-900 font-bold hover:text-[#0066FF] transition-colors">
-                  <Linkedin size={20} className="text-slate-300 group-hover:text-[#0066FF] transition-colors" /> LinkedIn
+                <a href={PERSONAL_INFO.socials.linkedin} className="group flex items-center gap-3 text-slate-900 font-bold hover:text-[#1557c0] transition-colors">
+                  <Linkedin size={20} className="text-slate-300 group-hover:text-[#1557c0] transition-colors" /> LinkedIn
                 </a>
-                <a href={PERSONAL_INFO.socials.github} className="group flex items-center gap-3 text-slate-900 font-bold hover:text-[#0066FF] transition-colors">
+                <a href={PERSONAL_INFO.socials.github} className="group flex items-center gap-3 text-slate-900 font-bold hover:text-[#1557c0] transition-colors">
                   <Github size={20} className="text-slate-300 group-hover:text-slate-900 transition-colors" /> GitHub
                 </a>
-                <a href={PERSONAL_INFO.socials.instagram} className="group flex items-center gap-3 text-slate-900 font-bold hover:text-[#0066FF] transition-colors">
+                <a href={PERSONAL_INFO.socials.instagram} className="group flex items-center gap-3 text-slate-900 font-bold hover:text-[#1557c0] transition-colors">
                   <Instagram size={20} className="text-slate-300 group-hover:text-rose-500 transition-colors" /> Instagram
                 </a>
-                <a href={PERSONAL_INFO.socials.twitter} className="group flex items-center gap-3 text-slate-900 font-bold hover:text-[#0066FF] transition-colors">
+                <a href={PERSONAL_INFO.socials.twitter} className="group flex items-center gap-3 text-slate-900 font-bold hover:text-[#1557c0] transition-colors">
                   <Twitter size={20} className="text-slate-300 group-hover:text-blue-400 transition-colors" /> Twitter
                 </a>
               </div>
@@ -167,18 +170,18 @@ const App: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center pt-16 border-t border-slate-50 gap-8">
             <div className="flex items-center gap-4">
                <div className="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center text-white font-black text-sm">N</div>
-               <span className="text-slate-400 text-[10px] font-black uppercase tracking-[0.4em]">Mouhamadou Lamine Niassy • © 2025</span>
+               <span className="text-slate-400 text-[10px] font-black uppercase tracking-[0.4em]">Mouhamadou Lamine Niassy • © {new Date().getFullYear()}</span>
             </div>
             
             <button 
               onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
-              className="w-12 h-12 rounded-full border border-slate-100 flex items-center justify-center text-slate-400 hover:bg-[#0066FF] hover:text-white hover:border-[#0066FF] transition-all"
+              className="w-12 h-12 rounded-full border border-slate-100 flex items-center justify-center text-slate-400 hover:bg-[#1557c0] hover:text-white hover:border-[#1557c0] transition-all"
             >
               <ArrowUp size={20} />
             </button>
             
             <div className="text-slate-400 text-[10px] font-black uppercase tracking-[0.4em]">
-              Fait avec <span className="text-[#0066FF]">React</span> & <span className="text-[#0066FF]">Passion</span>
+              <span className="text-[#1557c0]">#al_amine1903</span>
             </div>
           </div>
         </div>
