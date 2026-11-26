@@ -181,7 +181,7 @@ const App: React.FC = () => {
             </button>
             
             <div className="text-slate-400 text-[10px] font-black uppercase tracking-[0.4em]">
-              <span className="text-[#1557c0]">#al_amine1903</span>
+              <span className="footer-handle text-[#1557c0]">#al_amine1903</span>
             </div>
           </div>
         </div>

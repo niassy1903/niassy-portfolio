@@ -19,6 +19,7 @@
 body { margin: 0; color: var(--ink); background: var(--paper); overflow-x: hidden; }
 ::selection { color: white; background: var(--brand); }
 a { text-decoration: none; }
+.footer-handle { letter-spacing:.02em; text-transform:none; }
 button, a, input, textarea { -webkit-tap-highlight-color: transparent; }
 :focus-visible { outline: 3px solid #f0bb45; outline-offset: 4px; }
 
